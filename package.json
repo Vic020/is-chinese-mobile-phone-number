@@ -1,6 +1,6 @@
 {
   "name": "is-chinese-mobile-phone-number",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Check if a string is Chinese mobile phone numbers",
   "main": "index.js",
   "scripts": {

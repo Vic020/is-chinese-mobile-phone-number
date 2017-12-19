@@ -15,12 +15,53 @@ $ npm install --save is-chinese-mobile-phone-number
 ```js
 const isPhoneNumber = require('is-chinese-mobile-phone-number');
 
-isPhoneNumber('12312341234');
-//=> false
+isPhoneNumber.onlyChinaMobile("13912341234");
+// true
 
-isPhoneNumber('13912341234');
-//=> true
+isPhoneNumber.onlyChinaUnicom("18612341234");
+// true
+
+isPhoneNumber.onlyChinaTelecom("13312341234");
+// true
+
+isPhoneNumber.exceptSatellitePhone("13312341234");
+// true
+
+isPhoneNumber.exceptDataOnly("13312341234");
+// true
+
+isPhoneNumber.exceptMVNO("13312341234");
+// true
+
+isPhoneNumber.exceptMVNO("17112341234");
+// false
 ```
+
+## API
+### isPhoneNumber(string)
+Match all phone numbers
+
+### isPhoneNumber.exceptMVNO(string)
+Match all except MVNO phone numbers
+
+### isPhoneNumber.exceptSatellitePhone(string)
+Match all except satellite phone numbers
+
+### isPhoneNumber.exceptDataOnly(string)
+Match all except data-only phone numbers
+
+### isPhoneNumber.onlyChinaMobile(string)
+Match only China Mobile
+
+### isPhoneNumber.onlyChinaTelecom(string)
+Match only China Telecom
+
+### isPhoneNumber.onlyChinaUnicom(string)
+Match only China Unicom
+
+## Regular expressions
+[VincentSit/ChinaMobilePhoneNumberRegex](https://github.com/VincentSit/ChinaMobilePhoneNumberRegex)
+
 ## License
 
 MIT © [Vic Yu](https://vicyu.com)
