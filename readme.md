@@ -1,4 +1,4 @@
-# is-chinese-mobile-phone-number [![Build Status](https://travis-ci.org/vic020/is-chinese-mobile-phone-number.svg?branch=master)](https://travis-ci.org/vic020/is-chinese-mobile-phone-number)
+# is-chinese-mobile-phone-number [![Build Status](https://travis-ci.org/Vic020/is-chinese-mobile-phone-number.svg?branch=master)](https://travis-ci.org/Vic020/is-chinese-mobile-phone-number)
 
 > Check if a string is an Chinese mobile phone number
 
