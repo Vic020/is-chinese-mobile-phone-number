@@ -2,6 +2,11 @@
 
 > Check if a string is an Chinese mobile phone number
 
+Vendors support:
+- China Mobile(中国移动)
+- China Unicom(中国联通)
+- China Telecom(中国电信)
+- MVNO(虚拟运营商)
 
 ## Install
 
