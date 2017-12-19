@@ -1,0 +1,28 @@
+{
+  "name": "is-chinese-mobile-phone-number",
+  "version": "1.0.0",
+  "description": "Check if a string is Chinese mobile phone numbers",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "chinese",
+    "phone",
+    "number",
+    "check"
+  ],
+  "devDependencies": {
+    "ava": "*",
+    "xo": "*"
+  },
+  "author": "VicYu",
+  "license": "MIT",
+  "repository": "vic020/is-chinese-mobile-phone-number",
+  "xo": {
+    "esnext": true
+  }
+}
