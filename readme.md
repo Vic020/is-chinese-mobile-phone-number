@@ -15,6 +15,9 @@ $ npm install --save is-chinese-mobile-phone-number
 ```js
 const isPhoneNumber = require('is-chinese-mobile-phone-number');
 
+isPhoneNumber("13912341234");
+// true
+
 isPhoneNumber.onlyChinaMobile("13912341234");
 // true
 
