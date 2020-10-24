@@ -19,7 +19,7 @@ const phoneNumberOnlyChinaTelecom = /^(?:\+?86)?1(?:3(?:3\d|49)\d|53\d{2}|8[019]
 const phoneNumberOnlyChinaBroadcastNetwork = /^(?:\+?86)?192\d{8}$/;
 // Match Inmarsat (Satellite Communications)
 const phoneNumberOnlyInmarsat = /^(?:\+?86)?1749\d{7}$/;
-//Match Emergency Communication Support Center of MIIT (Emergency communications)
+// Match Emergency Communication Support Center of MIIT (Emergency communications)
 const phoneNumberOnlyEmergency = /^(?:\+?86)?174(?:0[6-9]|1[0-2])\d{6}$/;
 
 // MVNO number
@@ -52,34 +52,32 @@ const dataOnlyNumberOnlyChinaUnicom = /^(?:\+?86)?145\d{8}$/;
 // Match China Telecom
 const dataOnlyNumberOnlyChinaTelecom = /^(?:\+?86)?149\d{8}$/;
 
-const phoneNumber = x => x && x.exact ?
-    new RegExp(x.regexp) :
-    new RegExp(x.regexp, 'g');
+const phoneNumber = x => x && x.exact ? new RegExp(x.regexp) : new RegExp(x.regexp, 'g');
 
-const isPhoneNumber = x => phoneNumber({ exact: true, regexp: allNumber }).test(x);
+const isPhoneNumber = x => phoneNumber({exact: true, regexp: allNumber}).test(x);
 
-isPhoneNumber.allSMSNumber = x => phoneNumber({ exact: true, regexp: allSMSNumber }).test(x);
-isPhoneNumber.allPhoneNumber = x => phoneNumber({ exact: true, regexp: allPhoneNumber }).test(x);
-isPhoneNumber.phoneNumberOnlyChinaMobile = x => phoneNumber({ exact: true, regexp: phoneNumberOnlyChinaMobile }).test(x);
-isPhoneNumber.phoneNumberOnlyChinaUnicom = x => phoneNumber({ exact: true, regexp: phoneNumberOnlyChinaUnicom }).test(x);
-isPhoneNumber.phoneNumberOnlyChinaTelecom = x => phoneNumber({ exact: true, regexp: phoneNumberOnlyChinaTelecom }).test(x);
-isPhoneNumber.phoneNumberOnlyChinaBroadcastNetwork = x => phoneNumber({ exact: true, regexp: phoneNumberOnlyChinaBroadcastNetwork }).test(x);
-isPhoneNumber.phoneNumberOnlyInmarsat = x => phoneNumber({ exact: true, regexp: phoneNumberOnlyInmarsat }).test(x);
-isPhoneNumber.phoneNumberOnlyEmergency = x => phoneNumber({ exact: true, regexp: phoneNumberOnlyEmergency }).test(x);
+isPhoneNumber.allSMSNumber = x => phoneNumber({exact: true, regexp: allSMSNumber}).test(x);
+isPhoneNumber.allPhoneNumber = x => phoneNumber({exact: true, regexp: allPhoneNumber}).test(x);
+isPhoneNumber.phoneNumberOnlyChinaMobile = x => phoneNumber({exact: true, regexp: phoneNumberOnlyChinaMobile}).test(x);
+isPhoneNumber.phoneNumberOnlyChinaUnicom = x => phoneNumber({exact: true, regexp: phoneNumberOnlyChinaUnicom}).test(x);
+isPhoneNumber.phoneNumberOnlyChinaTelecom = x => phoneNumber({exact: true, regexp: phoneNumberOnlyChinaTelecom}).test(x);
+isPhoneNumber.phoneNumberOnlyChinaBroadcastNetwork = x => phoneNumber({exact: true, regexp: phoneNumberOnlyChinaBroadcastNetwork}).test(x);
+isPhoneNumber.phoneNumberOnlyInmarsat = x => phoneNumber({exact: true, regexp: phoneNumberOnlyInmarsat}).test(x);
+isPhoneNumber.phoneNumberOnlyEmergency = x => phoneNumber({exact: true, regexp: phoneNumberOnlyEmergency}).test(x);
 
-isPhoneNumber.allMVNONumber = x => phoneNumber({ exact: true, regexp: allMVNONumber }).test(x);
-isPhoneNumber.mvnoNumberOnlyChinaMobil = x => phoneNumber({ exact: true, regexp: mvnoNumberOnlyChinaMobil }).test(x);
-isPhoneNumber.mvnoNumberOnlyChinaUnicom = x => phoneNumber({ exact: true, regexp: mvnoNumberOnlyChinaUnicom }).test(x);
-isPhoneNumber.mvnoNumberOnlyChinaTelecom = x => phoneNumber({ exact: true, regexp: mvnoNumberOnlyChinaTelecom }).test(x);
+isPhoneNumber.allMVNONumber = x => phoneNumber({exact: true, regexp: allMVNONumber}).test(x);
+isPhoneNumber.mvnoNumberOnlyChinaMobile = x => phoneNumber({exact: true, regexp: mvnoNumberOnlyChinaMobile}).test(x);
+isPhoneNumber.mvnoNumberOnlyChinaUnicom = x => phoneNumber({exact: true, regexp: mvnoNumberOnlyChinaUnicom}).test(x);
+isPhoneNumber.mvnoNumberOnlyChinaTelecom = x => phoneNumber({exact: true, regexp: mvnoNumberOnlyChinaTelecom}).test(x);
 
-isPhoneNumber.allIoTNumbe = x => phoneNumber({ exact: true, regexp: allIoTNumbe }).test(x);
-isPhoneNumber.iotNumberOnyChinaMobile = x => phoneNumber({ exact: true, regexp: iotNumberOnyChinaMobile }).test(x);
-isPhoneNumber.iotNumberOnyChinaUnicom = x => phoneNumber({ exact: true, regexp: iotNumberOnyChinaUnicom }).test(x);
-isPhoneNumber.iotNumberOnyChinaTelecom = x => phoneNumber({ exact: true, regexp: iotNumberOnyChinaTelecom }).test(x);
+isPhoneNumber.allIoTNumber = x => phoneNumber({exact: true, regexp: allIoTNumber}).test(x);
+isPhoneNumber.iotNumberOnlyChinaMobile = x => phoneNumber({exact: true, regexp: iotNumberOnlyChinaMobile}).test(x);
+isPhoneNumber.iotNumberOnlyChinaUnicom = x => phoneNumber({exact: true, regexp: iotNumberOnlyChinaUnicom}).test(x);
+isPhoneNumber.iotNumberOnlyChinaTelecom = x => phoneNumber({exact: true, regexp: iotNumberOnlyChinaTelecom}).test(x);
 
-isPhoneNumber.allDataOnlyumber = x => phoneNumber({ exact: true, regexp: allDataOnlyumber }).test(x);
-isPhoneNumber.dataOnlyNumerOnlyChinaMobile = x => phoneNumber({ exact: true, regexp: dataOnlyNumerOnlyChinaMobile }).test(x);
-isPhoneNumber.dataOnlyNumerOnlyChinaUnicom = x => phoneNumber({ exact: true, regexp: dataOnlyNumerOnlyChinaUnicom }).test(x);
-isPhoneNumber.dataOnlyNumerOnlyChinaTelecom = x => phoneNumber({ exact: true, regexp: dataOnlyNumerOnlyChinaTelecom }).test(x);
+isPhoneNumber.allDataOnlyumber = x => phoneNumber({exact: true, regexp: allDataOnlyNumber}).test(x);
+isPhoneNumber.dataOnlyNumberOnlyChinaMobile = x => phoneNumber({exact: true, regexp: dataOnlyNumberOnlyChinaMobile}).test(x);
+isPhoneNumber.dataOnlyNumberOnlyChinaUnicom = x => phoneNumber({exact: true, regexp: dataOnlyNumberOnlyChinaUnicom}).test(x);
+isPhoneNumber.dataOnlyNumberOnlyChinaTelecom = x => phoneNumber({exact: true, regexp: dataOnlyNumberOnlyChinaTelecom}).test(x);
 
 export default isPhoneNumber;
