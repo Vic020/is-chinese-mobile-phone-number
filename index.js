@@ -80,4 +80,4 @@ isPhoneNumber.dataOnlyNumberOnlyChinaMobile = x => phoneNumber({exact: true, reg
 isPhoneNumber.dataOnlyNumberOnlyChinaUnicom = x => phoneNumber({exact: true, regexp: dataOnlyNumberOnlyChinaUnicom}).test(x);
 isPhoneNumber.dataOnlyNumberOnlyChinaTelecom = x => phoneNumber({exact: true, regexp: dataOnlyNumberOnlyChinaTelecom}).test(x);
 
-export default isPhoneNumber;
+module.exports = isPhoneNumber;

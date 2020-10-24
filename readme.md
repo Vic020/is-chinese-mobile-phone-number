@@ -26,6 +26,7 @@ var phoneNumber = "13912341234"
 
 // Match all numbers (Phone number + IoT number + Data only number)
 isPhoneNumber(phoneNumber);
+// true
 
 ```
 
