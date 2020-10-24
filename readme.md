@@ -16,16 +16,22 @@ Vendors support:
 $ npm install --save is-chinese-mobile-phone-number
 ```
 
-## Usage
-
+## Quick Usage
 ```js
-
 // init
 const isPhoneNumber = require('is-chinese-mobile-phone-number');
 
 // make a phone number 
 var phoneNumber = "13912341234"
 
+// Match all numbers (Phone number + IoT number + Data only number)
+isPhoneNumber(phoneNumber);
+
+```
+
+## API
+
+```js
 // Match all numbers (Phone number + IoT number + Data only number)
 isPhoneNumber(phoneNumber);
 
